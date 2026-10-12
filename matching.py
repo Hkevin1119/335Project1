@@ -8,7 +8,7 @@ TRAVEL_MINUTES = 15  # simplifying assumption: fixed pickup->delivery time
 def fmt(minutes: int) -> str:
     return f"{minutes // 60:02d}:{minutes % 60:02d}"
 
-
+# Dictionary initialization for states
 @dataclass
 class State:
     capacity_left: dict

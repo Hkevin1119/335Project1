@@ -1,0 +1,136 @@
+{
+  "recipients": [
+    {
+      "recipient_id": "R1",
+      "organization_name": "Community Food Bank",
+      "accepted_types": ["meals", "produce"],
+      "capacity": 100,
+      "area": "Downtown",
+      "closing_time": 1200
+    },
+    {
+      "recipient_id": "R2",
+      "organization_name": "Neighborhood Shelter",
+      "accepted_types": ["meals", "bakery"],
+      "capacity": 40,
+      "area": "Northside",
+      "closing_time": 900
+    },
+    {
+      "recipient_id": "R1",
+      "organization_name": "Community Food Bank",
+      "accepted_types": ["meals", "produce"],
+      "capacity": 100,
+      "area": "Downtown",
+      "closing_time": 1200
+    }
+  ],
+  "volunteers": [
+    {
+      "volunteer_id": "V1",
+      "vehicle_capacity": 50,
+      "area": "Downtown",
+      "available_from": 480,
+      "available_until": 1200,
+      "max_pickups": 5
+    },
+    {
+      "volunteer_id": "V2",
+      "vehicle_capacity": 30,
+      "area": "Northside",
+      "available_from": 500,
+      "available_until": 1000,
+      "max_pickups": 3
+    },
+    {
+      "volunteer_id": "V1",
+      "vehicle_capacity": 50,
+      "area": "Downtown",
+      "available_from": 480,
+      "available_until": 1200,
+      "max_pickups": 5
+    }
+  ],
+  "donations": [
+    {
+      "donation_id": "D-1",
+      "donor_name": "Local Diner",
+      "food_type": "meals",
+      "quantity": 25,
+      "expiry_time": 720,
+      "pickup_area": "Downtown",
+      "ready_time": 600,
+      "arrival_order": 0
+    },
+    {
+      "donation_id": "D-2",
+      "donor_name": "Corner Bakery",
+      "food_type": "bakery",
+      "quantity": 15,
+      "expiry_time": 630,
+      "pickup_area": "Northside",
+      "ready_time": 550,
+      "arrival_order": 1
+    },
+    {
+      "donation_id": "D-3",
+      "donor_name": "Downtown Market",
+      "food_type": "produce",
+      "quantity": 40,
+      "expiry_time": 850,
+      "pickup_area": "Downtown",
+      "ready_time": 610,
+      "arrival_order": 2
+    },
+    {
+      "donation_id": "D-4",
+      "donor_name": "Express Bistro",
+      "food_type": "meals",
+      "quantity": 20,
+      "expiry_time": 710,
+      "pickup_area": "Downtown",
+      "ready_time": 620,
+      "arrival_order": 3
+    },
+    {
+      "donation_id": "D-EXPIRED",
+      "donor_name": "Slow Diner",
+      "food_type": "meals",
+      "quantity": 10,
+      "expiry_time": 610,
+      "pickup_area": "Downtown",
+      "ready_time": 600,
+      "arrival_order": 0
+    },
+    {
+      "donation_id": "D-BAD-TYPE",
+      "donor_name": "Hardware Store",
+      "food_type": "tools",
+      "quantity": 5,
+      "expiry_time": 900,
+      "pickup_area": "Downtown",
+      "ready_time": 600,
+      "arrival_order": 1
+    },
+    {
+      "donation_id": "D-OVER-CAP",
+      "donor_name": "Giant Buffet",
+      "food_type": "meals",
+      "quantity": 150,
+      "expiry_time": 900,
+      "pickup_area": "Downtown",
+      "ready_time": 600,
+      "arrival_order": 2
+    },
+    {
+      "donation_id": "D-NO-VOL",
+      "donor_name": "Outer Suburb Cafe",
+      "food_type": "meals",
+      "quantity": 10,
+      "expiry_time": 900,
+      "pickup_area": "Suburbs",
+      "ready_time": 600,
+      "arrival_order": 3
+    }
+  ]
+}
