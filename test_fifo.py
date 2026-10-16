@@ -127,6 +127,18 @@ class TestFifo(unittest.TestCase):
         self.assertEqual((res["D-2"].recipient_id, res["D-2"].volunteer_id),
                          ("R2", "V2"))
 
+    def test_duplicate_ids_from_json(self):
+        donations, recipients, volunteers = load_scenario()
+
+        donation_ids = [d.donation_id for d in donations]
+        recipient_ids = [r.recipient_id for r in recipients]
+
+        volunteer_ids = [v.volunteer_id for v in volunteers]
+        #set used to keep unique values and compare against #of ids
+        self.assertEqual(len(donation_ids), len(set(donation_ids)), "Duplicate donation ids")
+        self.assertEqual(len(recipient_ids), len(set(recipient_ids)), "Duplicate recipient ids")
+        self.assertEqual(len(volunteer_ids), len(set(volunteer_ids)), "Duplicate volunteer ids")
+
     def test_empty_inputs(self):
         self.assertEqual(schedule_fifo([], [], []), [])
         [a] = schedule_fifo([get_donation("D-1")], [], [])
